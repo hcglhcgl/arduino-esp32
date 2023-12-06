@@ -52,16 +52,19 @@ dependencies:
     rules:
       - if: "target != esp32c2"
       - if: "target != esp32h2"
+      - if: "target != esp32s3"
   espressif/rmaker_common:
     version: "^1.4.3"
     rules:
       - if: "target != esp32c2"
       - if: "target != esp32h2"
+      - if: "target != esp32s3"
   espressif/esp_insights:
     version: "^1.0.1"
     rules:
       - if: "target != esp32c2"
       - if: "target != esp32h2"
+      - if: "target != esp32s3"
   espressif/qrcode:
     version: "^0.1.0~1"
     rules:
@@ -73,5 +76,5 @@ dependencies:
     rules:
       - if: "target in [esp32s3]"
 examples:
-  - path: ../idf_component_examples/
+  - path: idf_component_examples/
 
